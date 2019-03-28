@@ -1,0 +1,40 @@
+body {
+    background: #ddd;
+}
+
+/* "Attribute selector" selecting all div with a class value that begins with "col-" */
+div[class^="col-"] {
+    padding: 20px;
+}
+/* 
+img[alt="Dog"] {
+    border: 2px solid red;
+} */
+.bg-red {
+    background-color: lightcoral;
+    padding: 15px;
+}
+.bg-yellow {
+    background-color: lightyellow;
+    padding: 15px;
+}
+.my-button {
+    background: linear-gradient(mediumpurple, #503e76);
+    color: white;
+}
+.my-button:hover {
+    background: linear-gradient(#b194ed, #7661a3);
+    color: white;
+}
+.navbar-brand {
+    background: lightcoral;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+

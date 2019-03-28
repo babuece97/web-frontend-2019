@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr; */
+            grid-template-areas: 
+                "logo nav nav nav"
+                "main main banner1 banner1"
+                "main main banner2 banner2"
+                "footer footer footer footer";
+            grid-gap: .5em;
+        }
+        .grid-item {
+            margin: 0;
+        }
+        .one {
+            grid-area: logo;
+        }
+        .two {
+            grid-area: nav;  
+        }
+        .three {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .four {
+            grid-area: banner1;
+        }
+        .five {
+            grid-area: banner2;
+        }
+        .six {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">
+            <div class="sub-item">A</div>
+            <div class="sub-item">B</div>
+            <div class="sub-item">C</div>
+        </div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+        <div class="grid-item six">6</div>
+    </section>
+</body>
+</html>
