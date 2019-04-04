@@ -1,0 +1,20 @@
+// import the partials that I need into this stylesheet
+
+// Bootstrap essentials
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";   
+
+// Bootstrap extras
+@import "bootstrap/scss/reboot"; 
+@import "bootstrap/scss/grid";  
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/buttons";
+
+// My styles
+@import "variables";
+@import "mixins";
+@import "type";
+@import "jumbotron";
+@import "buttons";

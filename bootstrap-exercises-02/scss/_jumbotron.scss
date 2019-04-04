@@ -1,0 +1,5 @@
+// jumbotron
+
+.jumbotron {
+    @include my-gradient; // mixin "my-gradient" used here
+}
